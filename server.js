@@ -15,7 +15,7 @@ app.use(express.json());
 
 app.use(express.static("public"));
 
-mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/mongoHeadlines");
+mongoose.connect(process.env.MONGODB_URI || "mongodb://user1:password1@ds137686.mlab.com:37686/heroku_43k3m5r5");
 
 db.Library.create({ name: "Campus Library" })
   .then(dbLibrary => {
